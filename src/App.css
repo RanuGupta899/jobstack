@@ -1,0 +1,344 @@
+ /* App.css */
+
+/* Basic Navbar Customization */
+.navbar-custom {
+  background-color:white;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-custom:hover {
+  background-color: white;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:seagreen !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar-logo:hover {
+  color: #ffc107 !important;
+}
+
+/* Animation for Navbar Links */
+.nav-link-custom {
+  text-decoration: none;
+  color:  seagreen !important;
+  margin-top: 6px;
+  font-size: 1.1rem;
+  margin-right: 15px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link-custom:hover {
+  color: #ffc107 !important;
+}
+
+.nav-link-custom::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc107;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* Sign In Button Customization */
+.sign-in-button {
+  font-weight: bold;
+  border-color: #ffc107;
+  color: #ffc107;
+  margin-left: 20px;
+  transition: all 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #ffc107;
+  color: #007bff;
+}
+
+/* Keyframe Animation for Logo */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* App.css */
+
+/* Slider Image Customization */
+.slider-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  bottom: 25%;
+}
+
+/* Search Form Customization */
+.search-form-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.search-form-container .form-control {
+  width: 250px;
+}
+
+.search-form-container .btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  font-weight: bold;
+}
+
+.search-form-container .btn-primary:hover {
+  background-color: #ffb100;
+  border-color: #ffb100;
+}
+
+.job-detail-card:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-jobs:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* job list */
+/* RelatedJobsSidebar.css */
+
+.related-jobs-sidebar {
+  width: 100%;
+  max-width: 300px;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.related-jobs-sidebar h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.related-jobs-sidebar .accordion-button:not(.collapsed) {
+  color: #007bff;
+}
+
+
+
+/* Contact */
+.contact-container {
+  background-color: #f8f9fa;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sigin */
+
+.signup-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  background-image: url('https://jobstack-shreethemes.vercel.app/static/media/bg3.b53090a36ed85cc017cd.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.signup-form{
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 350px;
+}
+.signup-form h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+.form-group label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+.form-group input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form-group input:focus{
+  outline: none;
+  border-color: #4CAF50;
+}
+.submit-btn{
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+/* Login */
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  background-image: url('https://jobstack-shreethemes.vercel.app/static/media/bg3.b53090a36ed85cc017cd.jpg'); /* Replace with your image URL */
+background-size: cover;
+background-position: center;
+}
+.login-form{
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 350px;
+}
+.login-form h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+.form-group label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+.form-group input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form-group input:focus{
+  outline: none;
+  border-color: #4CAF50;
+}
+.submit-btn{
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+
+/* job Category */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 15s linear infinite;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-card:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.carousel-item {
+  height: 100%; /* Ensure carousel item height matches card height */
+}
+
+
+.overlay1 { 
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);/* Semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  /* transition: opacity 0.3s ease; */
+}
+
+/* .custom-card:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+/* }  */
+
+
+/* Job List */
+.job-item:hover{
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
